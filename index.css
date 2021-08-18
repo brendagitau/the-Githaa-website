@@ -1,0 +1,598 @@
+/* Navbar css */
+/* .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+} */
+.sidenav {
+
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 10px;
+    margin-left: 30%;
+   }
+   .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    margin-right: 20px;
+  }
+  .sidenav a:hover {
+    color: #F1F1F1;
+  }
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 50px;}
+    .sidenav a {font-size: 18px;}
+  }
+  .navbar{
+    padding-right: 380px;
+    position: fixed;
+    z-index: 9999;
+    top: -16.5%;
+    margin: 0;
+    background-color: rgba(49, 48, 48, 0.925);
+    opacity: 10;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+  }
+  
+  header::after {
+  content: '';
+  display: none;
+  clear: both;
+  width: 0;
+  padding-top: 8px;
+  }
+  
+  nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  }
+  nav li {
+  display: inline-table;
+  padding-top: 30px;
+  position: relative;
+  }
+  nav a{
+  display: inline-block;
+  
+  position: relative;
+  }
+  nav ul li a{
+    list-style: none;
+    margin-right: 40px;
+  }
+  nav a {
+  color:white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-align: center;
+  padding-top: -0%;
+  left: -3%;
+  }
+  nav a:hover {
+  color:rgb(214, 185, 16);
+  }
+  nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+  }
+  nav a:hover::before {
+  width: 100%;
+  }
+  
+  
+  /* Landing css */
+  @import url("https://fonts.googleapis.com/css2?family=Playball&family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Chilanka&display=swap");
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 17px;
+    font-family: "Poppins", "Playball", sans-serif;
+  }
+  /* body {
+    padding: 0;
+    margin-top: 0;
+    top: 0;
+  } */
+  
+  .middle {
+    padding-top: 450px;
+    font-family: "Playball", cursive;
+    position: absolute;
+    top: -3%;
+    left: -40%;
+    transform: translateY(-50%);
+    color: gold;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+  }
+  .middle h1 {
+    margin-left: 40px;
+    color: gold;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Playball", cursive;
+    left: 0%;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;/*allows us define properties for our annimation*/
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {/* keyframe defines the style that will be applied for that moment within the animation. The animation engine will smoothly interpolate style between the keyframes.*/
+    from {
+      text-shadow: 0 0 10px gold, 0 0 20px gold, 0 0 30px gold, 0 0 40px gold, 0 0 50px gold, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px gold, 0 0 30px gold, 0 0 40px gold, 0 0 50px gold, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+  span {
+    font-family: "Playball", cursive;
+    font-size: 30px;
+    left: -50px;
+  }
+  .hidden {
+    font-family: "Playball", cursive;
+    font-size: 25px;
+    max-width: 0;
+    opacity: 0;
+    transition: 0.5s ease-in;
+  }
+  .middle h1:hover .hidden {
+    opacity: 1;
+    max-width: 1em;
+  }
+  #myVideo {
+    height: 500;
+    width: 1495px;
+    background-color: black;
+    padding: 0, 0, 0, 0;
+    margin-top: 0;
+    top: 0;
+    margin-left: 0;
+   
+  }
+  
+  .content {
+    padding-bottom: 40px;
+    font-family: "Chilanka",cursive;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    height: 76%;
+    padding: 20px;
+    left: 71%;
+    font-size: 20px;
+  }
+  /*vero*/
+  
+  .sidenav {
+    
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+  }
+  .sidenav {
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 10px;
+  }
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  @media screen and (max-height: 450px) {
+    .sidenav {
+      padding-top: 50px;
+    }
+    .sidenav a {
+      font-size: 18px;
+    }
+  }
+  #body {
+    margin: 0;
+    background-color: rgba(49, 48, 48, 0.925);
+    opacity: 10;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 800;
+    margin-bottom: 0vw;
+    
+  }
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 8px;
+    
+  }
+  
+  header::after {
+    content: "";
+    display: none;
+    clear: both;
+    width: 0;
+    padding-top: 8px;
+  
+  }
+  .logo {
+    float: left;
+    padding: 10px 0;
+    margin-left: 20px;
+  }
+  nav {
+   
+    text-align: right;
+    text-decoration: none;
+  }
+  nav ul {
+  
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+    position: relative;
+  }
+  nav a {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 15px;
+    position: relative;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  nav a:hover {
+  
+    color: gold;
+  }
+  nav a::before {
+    content: "";
+    display: block;
+    height: 5px;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+  }
+  nav a:hover::before {
+    width: 100%;
+  }
+  h1 {
+    text-align: center;
+    margin-top: 10%;
+    font-size: 20;
+    color: white;
+  }
+  
+  /* About css */
+  #aboutTitle{
+    font-weight: 900;
+    position: absolute;
+    font-size: 30px;
+      color: wheat;
+      margin: -20% 40%;
+      margin-top: 0px;
+      margin-bottom: 60px;
+  }
+  #p1{
+    color:black;
+    margin-left: 30px;
+    margin-top: 20px;
+    position: relative;
+  
+    }
+  .marquee{
+  
+  top: 0;
+    }
+  /* .image:hover{
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+  } */
+  .us{
+  display:flex;
+  
+  }
+  #abt{
+      border-radius: 5px;
+      margin-top: 70px;
+      
+  }
+  .image2{
+  display:flex;
+  }
+  .us{
+  margin-top:5% ;
+  color:maroon;
+  margin-left: 40px;
+  }
+  #myImage{
+  padding-top:15%;
+  padding-left: 20px;
+  padding-right:30px ;
+  }
+  .about1{
+    margin-top: 70px;
+  }
+  
+  
+  
+  /* Menu css */
+  .menu{
+    margin-top: 10%;
+    background-image: url("/images/menubg.gif");
+    background-repeat: no-repeat;
+    position: sticky;
+    background-size: cover;
+    height: 180vh;
+    position: relative;
+  }
+   .bigContainer{ 
+     position: absolute;
+     top: 70px;
+      /* display: flex; */
+      justify-content: space-between;
+  }
+  .container{
+    margin-top: 40px;
+      display: flex;
+      justify-content: space-around;
+  }
+  .project-box{
+    position: relative;
+      background-color: rgb(250, 246, 246);
+      width: 300px;
+      margin-left: 29px;
+      height: 400px;
+   
+  }
+  .project-text{
+      margin-left: 35%;
+      margin-bottom: 20%;
+  }
+  #image{
+      margin:20px;
+      width: 270px;
+      height: 300px;
+      opacity: 5;
+  }
+  
+  #image:hover{
+      opacity: 1;
+  
+      height: 350px;
+      width: 290px;
+  }
+  #heading{
+    position: absolute;
+    font-size: 30px;
+      color: wheat;
+      margin: 30% 40%;
+      margin-top: 10px;
+  }
+  
+  @keyframes animate{
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+  
+  
+  /* Contacts css */
+  .info{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:#3A5502;
+  }
+  .info .msg{
+    max-width: 400px;
+    text-align: center;
+  }
+  .info .msg h2{
+  font-size: 36px;
+  font-weight: 500;
+  color:white;
+  }
+  .info .msg p{
+    font-weight: 300;
+    color: #fff;
+  }
+  .sack{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .sack .contactInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  .sack .contactInfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+  }
+  .sack .contactInfo .box .icon{
+    min-width: 30px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+  }
+  .sack .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+  }
+  .sack .contactInfo .box .text h3{
+  font-weight: 500;
+  color: #00BCD4;
+  }
+  .contactform{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+  }
+  .contactform h2{
+    font-size: 20px;
+    color:#333;
+    font-weight:500 ;
+  }
+  .contactform .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .contactform .inputBox input,
+  .contactform .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+  }
+  .contactform .inputBox  span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: burlywood;
+  }
+  .contactform .inputBox input:focus ~span,
+  .contactform .inputBox input:valid ~span
+  .contactform .inputBox textarea:focus ~span,
+  .contactform .inputBox textarea :valid ~span
+  {
+    color: #E91E63;
+    font-size: 15px;
+    transform: translateY(-20px);
+  }
+  .contactform .inputBox input[type="Submit" ]{
+    width: 100px;
+    cursor: pointer;
+    color: white;
+    background-color: #00BCD4;
+    padding: 10px;
+    font-size: 18px;
+    border: 50px;
+  }
+  footer{
+    background:black ;
+    color: lightgrey;
+    font-family: "Roboto",sans-serif;
+    padding: 36px;
+    position: relative;
+  }
+  footer a{
+    color: lightpink;
+    text-decoration: none;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+  .sack{
+    display: flex;
+  
+  }
+  
+   ul{
+    list-style: none;
+    margin-top: 16px;
+  }
+  .reverse{
+    padding-right:100px;
+    border-right: 1px solid#c4c4c4;
+  }
+  .trend{
+    padding-left: 100px;
+  }
+  .icons{
+    margin-top: 16px;
+    text-decoration: none;
+    margin: 0 16px;
+    margin-left: 0;
+    padding-top: 100px;  padding-top:50px ;
+  }
+  .p{
+    margin-top: 32px;
+  }  
